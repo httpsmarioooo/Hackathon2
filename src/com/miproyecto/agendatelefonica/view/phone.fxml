@@ -18,39 +18,39 @@
       <Label fx:id="lblResultadoBuscar" layoutX="57.0" layoutY="300.0" textFill="blue" />
 
       
-      <Button layoutX="23.0" layoutY="673.0" onAction="#agregarContacto" prefHeight="49.0" prefWidth="161.0" style="-fx-background-color: #57BF06;" text="Agregar Contacto" textFill="WHITE">
+      <Button layoutX="23.0" layoutY="673.0" onAction="#agregarContacto" prefHeight="49.0" prefWidth="161.0" style="-fx-background-color: black; -fx-border-color: #57BF06; -fx-border-radius: 10px;" text="Agregar Contacto" textFill="#57bf06">
          <font>
             <Font name="Minecraft Regular" size="13.0" />
          </font></Button>
-      <Button layoutX="23.0" layoutY="755.0" onAction="#buscarContacto" prefHeight="49.0" prefWidth="161.0" style="-fx-background-color: #3A3D3F;" text="Buscar Contacto" textFill="WHITE">
+      <Button layoutX="23.0" layoutY="755.0" onAction="#buscarContacto" prefHeight="49.0" prefWidth="161.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Buscar Contacto" textFill="WHITE">
          <font>
             <Font name="Minecraft Regular" size="12.0" />
          </font></Button>
-      <Button layoutX="228.0" layoutY="673.0" onAction="#eliminarContacto" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: #BC0C0C;" text="Eliminar Contacto" textFill="WHITE">
-         <font>
-            <Font name="Minecraft Regular" size="12.0" />
-         </font></Button>
-
-      <Button layoutX="23.0" layoutY="845.0" onAction="#modificarTelefono" prefHeight="49.0" prefWidth="161.0" style="-fx-background-color: #3A3D3F;" text="Modificar Teléfono" textFill="WHITE">
-         <font>
-            <Font name="Minecraft Regular" size="12.0" />
-         </font></Button>
-      <Button layoutX="228.0" layoutY="755.0" onAction="#listarContactos" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: #3A3D3F;" text="Listar Contactos" textFill="WHITE">
-         <font>
-            <Font name="Minecraft Regular" size="12.0" />
-         </font></Button>
-      <Button layoutX="228.0" layoutY="845.0" onAction="#espaciosLibres" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: #3A3D3F;" text="Espacios Libres" textFill="WHITE">
+      <Button layoutX="228.0" layoutY="673.0" onAction="#eliminarContacto" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: black; -fx-border-color: red; -fx-border-radius: 10px;" text="Eliminar Contacto" textFill="RED">
          <font>
             <Font name="Minecraft Regular" size="12.0" />
          </font></Button>
 
-      <TextArea fx:id="resultadosArea" disable="true" editable="false" layoutX="51.0" layoutY="319.0" prefHeight="211.0" prefWidth="320.0" style="-fx-background-color: #0000000;" />
+      <Button layoutX="23.0" layoutY="845.0" onAction="#modificarTelefono" prefHeight="49.0" prefWidth="161.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Modificar Teléfono" textFill="WHITE">
+         <font>
+            <Font name="Minecraft Regular" size="12.0" />
+         </font></Button>
+      <Button layoutX="228.0" layoutY="755.0" onAction="#listarContactos" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: black; -fx-border-color: #FFFFFF; -fx-border-radius: 10px;" text="Listar Contactos" textFill="WHITE">
+         <font>
+            <Font name="Minecraft Regular" size="12.0" />
+         </font></Button>
+      <Button layoutX="228.0" layoutY="845.0" onAction="#espaciosLibres" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-radius: 10px;" text="Espacios Libres" textFill="WHITE">
+         <font>
+            <Font name="Minecraft Regular" size="12.0" />
+         </font></Button>
+
+      <TextArea fx:id="resultadosArea" editable="false" layoutX="51.0" layoutY="319.0" prefHeight="211.0" prefWidth="320.0" style="-fx-background-color: #0000000;" />
       <TextField fx:id="txtNombreBuscar" layoutX="51.0" layoutY="264.0" prefHeight="25.0" prefWidth="120.0" promptText="Nombre" />
       <TextField fx:id="txtApellidoBuscar" layoutX="193.0" layoutY="264.0" prefHeight="25.0" prefWidth="120.0" promptText="Apellido" />
       <Button layoutX="324.0" layoutY="264.0" onAction="#existeContacto" text="Buscar" />
 
       <Label layoutX="51.0" layoutY="233.0" text="Buscar contacto por nombre y apellido" />
-      <Button layoutX="217.0" layoutY="563.0" onAction="#agendaLlena" prefHeight="35.0" prefWidth="133.0" style="-fx-background-color: #EE731B;" text="¿Agenda Llena?" textFill="WHITE">
+      <Button layoutX="208.0" layoutY="563.0" onAction="#agendaLlena" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 40px;" text="¿Agenda Llena?">
          <font>
             <Font name="Minecraft Regular" size="12.0" />
          </font></Button>
