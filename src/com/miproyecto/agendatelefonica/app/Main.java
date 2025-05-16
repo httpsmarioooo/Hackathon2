@@ -15,18 +15,19 @@ public class Main {
 
         int opcion;
 
-        System.out.println("BIENVENIDO A TU AGENDA TELEFÓNICA");
+        System.out.println("BIENVENIDO A TU AGENDA TELEFÓNICA 📒");
 
         do{
             System.out.println("\n--- MENÚ ---");
             System.out.println("1. Añadir nuevo contacto");
-            System.out.println("2. Saber si existe un contacto");
+            System.out.println("2. ¿Existe este contacto?");
             System.out.println("3. Buscar un contacto");
             System.out.println("4. Eliminar un contacto");
             System.out.println("5. Modificar teléfono de contacto");
             System.out.println("6. Mostrar lista de contactos");
-            System.out.println("7. Mostrar cupo en la agenda");
-            System.out.println("8. Salir");
+            System.out.println("7. ¿La agenda esta llena?");
+            System.out.println("8. Espacios disponibles en la agenda");
+            System.out.println("9. Salir");
             System.out.println("Selecciona una opción: ");
             opcion = scanner.nextInt();
             scanner.nextLine();
@@ -51,16 +52,17 @@ public class Main {
                     agenda.listarContactos();
                     break;
                 case 7:
-                    agenda.llena();
-                    agenda.espacioLibres();
-                    break;
+                    agenda.agendaLlena();
                 case 8:
+                    agenda.espaciosLibres();
+                    break;
+                case 9:
                     System.out.println( "!Hasta luego! 😊");
                     break;
                 default:
-                    System.out.println("Opción invalida. Intenta nuevamente.");
+                    System.out.println("❌ Opción invalida. Intenta nuevamente.");
             }
-        }while(opcion != 7);
+        }while(opcion != 9);
         scanner.close();
     }
 }
