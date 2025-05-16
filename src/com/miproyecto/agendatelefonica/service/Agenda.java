@@ -44,8 +44,7 @@ public class Agenda {
         }
 
         // Verificacion si hay espacio
-        if (contactos.size() >= maxSize) {
-            System.out.println("❌La agenda está llena. No se pueden agregar más contactos.");
+        if (agendaLlena()) {
             return;
         }
 
@@ -124,6 +123,80 @@ public class Agenda {
             System.out.println("❌Contacto no encontrado.");
         }
     }
+
+    public void eliminarContacto() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresa el nombre del contacto que deseas eliminar:");
+        String nombre = scanner.nextLine().trim();
+
+        System.out.println("Ingresa el apellido del contacto:");
+        String apellido = scanner.nextLine().trim();
+
+        // Creamos un objeto Contacto solo con nombre y apellido
+        Contacto contactoC = new Contacto();
+        contactoC.setNombre(nombre);
+        contactoC.setApellido(apellido);
+
+        if (contactos.remove(contactoC)) {
+            System.out.println("✅ Contacto eliminado exitosamente.");
+        } else {
+            System.out.println("❌ No se encontró un contacto con ese nombre y apellido.");
+        }
+    }
+
+    public void modificarTelefono() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresa el nombre del contacto a modificar:");
+        String nombre = scanner.nextLine().trim();
+
+        System.out.println("Ingresa el apellido del contacto:");
+        String apellido = scanner.nextLine().trim();
+
+        boolean encontrado = false;
+
+        for (Contacto c : contactos) {
+            if (c.getNombre().equalsIgnoreCase(nombre) &&
+                    c.getApellido().equalsIgnoreCase(apellido)) {
+
+                System.out.println("Ingresa el nuevo número de teléfono:");
+                int nuevoTelefono = scanner.nextInt();
+
+                c.setTelefono(nuevoTelefono);
+                System.out.println("✅ Teléfono actualizado exitosamente.");
+                encontrado = true;
+                break;
+            }
+        }
+        if (!encontrado) {
+            System.out.println("❌ Contacto no encontrado.");
+        }
+    }
+
+    public boolean agendaLlena() {
+        boolean llena = contactos.size() >= maxSize;
+
+        if (llena) {
+            System.out.println("📕 La agenda está llena. No hay espacio disponible para nuevos contactos.");
+        } else {
+            System.out.println("📗 La agenda todavía tiene espacio disponible.");
+        }
+        return llena;
+
+    }
+
+    public void espaciosLibres() {
+        int disponibles = maxSize - contactos.size();
+
+        if (disponibles == 0) {
+            System.out.println("📕 No hay espacio disponible. La agenda está llena.");
+        } else {
+            System.out.println("📗 Quedan " + disponibles + " espacio(s) disponible(s) en la agenda.");
+        }
+    }
+
 
 
 }
