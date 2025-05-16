@@ -17,6 +17,14 @@ public class Agenda {
         this.contactos = new HashSet<>(maxSize);
     }
 
+    public Set<Contacto> getContactos() {
+        return contactos;
+    }
+
+    public int getMaxSize() {
+        return maxSize;
+    }
+
 
     public void agregarContacto(){
         Scanner scanner = new Scanner(System.in);
@@ -196,6 +204,46 @@ public class Agenda {
             System.out.println("📗 Quedan " + disponibles + " espacio(s) disponible(s) en la agenda.");
         }
     }
+
+    // Nuevo método para agregar contacto desde la UI
+    public boolean agregarContactoDesdeUI(Contacto contactoC) {
+        if (contactoC.getNombre().isEmpty() || contactoC.getApellido().isEmpty()) return false;
+        if (contactos.contains(contactoC)) return false;
+        if (agendaLlena()) return false;
+
+        contactos.add(contactoC);
+        return true;
+    }
+
+    // Nuevo método para buscar contacto
+    public Contacto buscarContacto(String nombre, String apellido) {
+        for (Contacto c : contactos) {
+            if (c.getNombre().equalsIgnoreCase(nombre) && c.getApellido().equalsIgnoreCase(apellido)) {
+                return c;
+            }
+        }
+        return null;
+    }
+
+    // Nuevo método para eliminar contacto desde la UI
+    public boolean eliminarContacto(String nombre, String apellido) {
+        Contacto c = new Contacto();
+        c.setNombre(nombre);
+        c.setApellido(apellido);
+        return contactos.remove(c);
+    }
+
+    // Nuevo método para modificar teléfono desde la UI
+    public boolean modificarTelefono(String nombre, String apellido, int nuevoTelefono) {
+        for (Contacto c : contactos) {
+            if (c.getNombre().equalsIgnoreCase(nombre) && c.getApellido().equalsIgnoreCase(apellido)) {
+                c.setTelefono(nuevoTelefono);
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 
 

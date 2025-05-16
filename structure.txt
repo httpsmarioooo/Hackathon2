@@ -1,0 +1,69 @@
+Listado de rutas de carpetas para el volumen OS
+El número de serie del volumen es DEF2-F00D
+C:\USERS\BROSM\IDEAPROJECTS\HACKATHON2
+|   .gitattributes
+|   .gitignore
+|   Hackathon2.iml
+|   README.md
+|   structure.txt
+|   
++---.idea
+|   |   .gitignore
+|   |   betterCommentsSettings.xml
+|   |   misc.xml
+|   |   modules.xml
+|   |   vcs.xml
+|   |   workspace.xml
+|   |   
+|   \---libraries
+|           JavaFX.xml
+|           
++---out
+|   \---production
+|       \---Hackathon2
+|           \---com
+|               +---intellij
+|               |   \---uiDesigner
+|               |       \---core
+|               |               AbstractLayout.class
+|               |               DimensionInfo.class
+|               |               GridConstraints.class
+|               |               GridLayoutManager.class
+|               |               HorizontalInfo.class
+|               |               LayoutState.class
+|               |               Spacer.class
+|               |               SupportCode$TextWithMnemonic.class
+|               |               SupportCode.class
+|               |               Util.class
+|               |               VerticalInfo.class
+|               |               
+|               \---miproyecto
+|                   \---agendatelefonica
+|                       +---app
+|                       |       Main.class
+|                       |       
+|                       +---model
+|                       |       Contacto.class
+|                       |       
+|                       +---service
+|                       |       Agenda.class
+|                       |       
+|                       \---view
+|                               phone.fxml
+|                               
+\---src
+    \---com
+        \---miproyecto
+            \---agendatelefonica
+                +---app
+                |       Main.java
+                |       
+                +---model
+                |       Contacto.java
+                |       
+                +---service
+                |       Agenda.java
+                |       
+                \---view
+                        phone.fxml
+                        
