@@ -53,6 +53,7 @@ public class Main {
                     break;
                 case 7:
                     agenda.agendaLlena();
+                    break;
                 case 8:
                     agenda.espaciosLibres();
                     break;
