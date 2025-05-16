@@ -7,6 +7,9 @@ public class Contacto {
     private String apellido;
     private int telefono;
 
+    public Contacto() {
+    }
+
     public Contacto(String nombre, String apellido, int telefono) {
         this.nombre = nombre;
         this.apellido = apellido;
