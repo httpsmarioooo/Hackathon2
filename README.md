@@ -20,6 +20,9 @@ Este proyecto consiste en un sistema para gestionar una agenda telefónica con l
 - No se permite añadir contactos duplicados (contactos con el mismo nombre y apellido).
 
 
+
+--
+
 ## Herramientas y Funcionalidades
 
 Se crea un menú por consola para probar todas las funcionalidades de la agenda telefónica:
