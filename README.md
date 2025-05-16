@@ -27,7 +27,9 @@ Aquí algunas imágenes que usamos como referencia para la UI:
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | 🖼️ Imagen inicial de referencia       | <img src="https://s0.smartresize.com/wallpaper/892/584/HD-wallpaper-nokia-black-cell-phone-menu-mobile-numbers-pnone.jpg" width="100px"/> |
 | 📟 Diseño tipo Nokia clásico           | <img src="https://i.pinimg.com/736x/15/e8/c5/15e8c56a7aca78ed0348cd2497544a38.jpg" width="150px"/>                                        |
-| 📱 Versión final usada creacion propia | <img src="https://i.pinimg.com/736x/15/e8/c5/15e8c56a7aca78ed0348cd2497544a38.jpg" width="150px"/>                                        |
+| 📱 Versión final usada creacion propia | https://github.com/user-attachments/assets/c79ee235-4908-4ef9-bf72-3d15ddf8e777
+
+
 
 ## Video 🎨
 https://github.com/user-attachments/assets/2bf3cb4f-964b-441f-979a-7e59492bd51c
