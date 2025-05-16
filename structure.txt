@@ -1,6 +1,4 @@
-Listado de rutas de carpetas para el volumen OS
-El número de serie del volumen es DEF2-F00D
-C:\USERS\BROSM\IDEAPROJECTS\HACKATHON2
+Listado de rutas de carpetas para el proyecto
 |   .gitattributes
 |   .gitignore
 |   Hackathon2.iml
@@ -42,6 +40,9 @@ C:\USERS\BROSM\IDEAPROJECTS\HACKATHON2
 |                       +---app
 |                       |       Main.class
 |                       |       
+|                       +---controller
+|                       |       PhoneController.class
+|                       |       
 |                       +---model
 |                       |       Contacto.class
 |                       |       
@@ -49,14 +50,20 @@ C:\USERS\BROSM\IDEAPROJECTS\HACKATHON2
 |                       |       Agenda.class
 |                       |       
 |                       \---view
-|                               phone.fxml
-|                               
+|                           |   phone.fxml
+|                           |   
+|                           \---images
+|                                   Nokia.png
+|                                   
 \---src
     \---com
         \---miproyecto
             \---agendatelefonica
                 +---app
                 |       Main.java
+                |       
+                +---controller
+                |       PhoneController.java
                 |       
                 +---model
                 |       Contacto.java
@@ -65,5 +72,8 @@ C:\USERS\BROSM\IDEAPROJECTS\HACKATHON2
                 |       Agenda.java
                 |       
                 \---view
-                        phone.fxml
-                        
+                    |   phone.fxml
+                    |   
+                    \---images
+                            Nokia.png
+                            
