@@ -1,0 +1,49 @@
+@startuml
+
+package agendatelefonica.model {
+    class Contacto {
+        - String nombre
+        - String apellido
+        - int telefono
+        + Contacto()
+        + Contacto(String nombre, String apellido, int telefono)
+        + String getNombre()
+        + void setNombre(String nombre)
+        + String getApellido()
+        + void setApellido(String apellido)
+        + int getTelefono()
+        + void setTelefono(int telefono)
+        + String toString()
+        + boolean equals(Object o)
+        + int hashCode()
+    }
+}
+
+package agendatelefonica.service {
+    class Agenda {
+        - Set<Contacto> contactos
+        - int maxSize
+        + Agenda()
+        + Agenda(int maxSize)
+        + void agregarContacto()
+        + void existeContacto()
+        + void listarContactos()
+        + void buscaContacto()
+        + void eliminarContacto()
+        + void modificarTelefono()
+        + boolean agendaLlena()
+        + void espaciosLibres()
+    }
+}
+
+package agendatelefonica.app {
+    class Main {
+        + static void main(String[] args)
+    }
+}
+
+' Relaciones
+agendatelefonica.service.Agenda --> agendatelefonica.model.Contacto
+agendatelefonica.app.Main --> agendatelefonica.service.Agenda
+
+@enduml
