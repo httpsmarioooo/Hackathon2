@@ -29,10 +29,19 @@ Aquí algunas imágenes que usamos como referencia para la UI:
 | 📟 Diseño tipo Nokia clásico           | <img src="https://i.pinimg.com/736x/15/e8/c5/15e8c56a7aca78ed0348cd2497544a38.jpg" width="150px"/>                                        |
 
 
+## Diagrama UML🎨
+
+![diagrama](https://github.com/user-attachments/assets/eeb4c804-c02f-416a-ad8a-38e39734d74c)
+
+
+
+
 
 
 ## Video 🎨
-https://github.com/user-attachments/assets/2bf3cb4f-964b-441f-979a-7e59492bd51c
+
+https://github.com/user-attachments/assets/275f654d-dfcd-4f7f-aed7-7332d7c06091
+
 
 
 
